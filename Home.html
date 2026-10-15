@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>طمأنينة | الرئيسية</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="logo">
+        طمأنينة
+    </div>
+
+
+    <nav>
+
+        <a href="Razan.html" class="active">
+            الرئيسية
+        </a>
+
+        <a href="#azkar">
+            الأذكار
+        </a>
+
+        <a href="#stories">
+            قصص
+        </a>
+
+        <a href="Logout.html">
+            خروج
+        </a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+
+    <!-- آية اليوم -->
+
+    <section class="verse-card">
+
+        <p class="small-title">
+            آية اليوم
+        </p>
+
+        <h1 id="verseText">
+
+            وَفِي السَّمَاءِ رِزْقُكُمْ
+            وَمَا تُوعَدُونَ
+
+        </h1>
+
+        <p id="verseSource">
+
+            سورة الذاريات - 22
+
+        </p>
+
+
+        <button
+            class="outline-btn"
+            onclick="changeVerse()">
+
+            🤍 آية أخرى
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= الحالة ================= -->
+
+    <section class="feeling-card">
+
+        <h2>
+            كيف حال قلبك اليوم؟
+        </h2>
+
+        <p>
+            اختاري الحالة الأقرب ليك
+        </p>
+
+
+        <div class="feelings">
+
+            <button onclick="showFeeling('قلق')">
+                😟
+                <span>قلقة</span>
+            </button>
+
+            <button onclick="showFeeling('حزن')">
+                😔
+                <span>حزينة</span>
+            </button>
+
+            <button onclick="showFeeling('تعب')">
+                😴
+                <span>متعبة</span>
+            </button>
+
+            <button onclick="showFeeling('سعادة')">
+                😊
+                <span>سعيدة</span>
+            </button>
+
+        </div>
+
+
+        <div id="feelingMessage">
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= عداد الطمأنينة ================= -->
+
+    <section class="counter-card">
+
+        <h2>
+            عداد الطمأنينة
+        </h2>
+
+        <p>
+            خدي نفس عميق وابدئي التسبيح
+        </p>
+
+
+        <div class="counter">
+
+            <span id="counter">
+                0
+            </span>
+
+        </div>
+
+
+        <button
+            class="main-btn"
+            onclick="increaseCounter()">
+
+            سبحان الله
+
+        </button>
+
+    </section>
+
+
+
+    <!-- ================= الأذكار ================= -->
+
+    <section id="azkar" class="content-section">
+
+        <h2>
+            🌿 أذكار قصيرة
+        </h2>
+
+
+        <div class="item">
+
+            <p>
+                سبحان الله وبحمده
+            </p>
+
+        </div>
+
+
+        <div class="item">
+
+            <p>
+                لا إله إلا الله
+            </p>
+
+        </div>
+
+
+        <div class="item">
+
+            <p>
+                حسبي الله ونعم الوكيل
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= القصص ================= -->
+
+    <section id="stories" class="content-section">
+
+        <h2>
+            🤍 مساحة حكاية
+        </h2>
+
+        <p>
+            أحياناً الإنسان لا يحتاج حلاً كبيراً،
+            فقط يحتاج أن يتذكر أن الله معه.
+        </p>
+
+
+        <button
+            class="main-btn"
+            onclick="showStory()">
+
+            اقرأ رسالة اليوم
+
+        </button>
+
+
+        <p id="storyMessage">
+
+        </p>
+
+    </section>
+
+</main>
+
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        طمأنينة 🤍
+    </p>
+
+
+    <a href="logout.html">
+        تسجيل الخروج
+    </a>
+
+</footer>
+
+
+
+<script src="Main.js"></script>
+
+</body>
+
+</html>
